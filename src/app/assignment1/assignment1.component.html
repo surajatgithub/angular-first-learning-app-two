@@ -1,0 +1,8 @@
+<h5>Game Control</h5>
+<app-game-control (eventGameStarted)="onGameStarted($event)" (eventGameStopped)="onGameStopped()"></app-game-control>
+
+<h5>Countdowns</h5>
+<div *ngFor="let c of countDowns">
+    <app-even *ngIf="((c%2) == 0);">Even: {{ c }}</app-even>
+    <app-odd *ngIf="((c%2) != 0);">Odd: {{ c }}</app-odd>
+</div>
