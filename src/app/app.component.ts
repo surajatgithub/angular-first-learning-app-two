@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Suraj';
+  activePageName: string = 'recipe';
+
+  onPageSelected(pageName) {
+    this.activePageName = pageName;
+  }
 }
