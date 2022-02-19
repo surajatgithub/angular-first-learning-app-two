@@ -15,6 +15,8 @@ import { Assignment1Component } from './assignment1/assignment1.component';
 import { GameControlComponent } from './assignment1/game-control/game-control.component';
 import { OddComponent } from './assignment1/odd/odd.component';
 import { EvenComponent } from './assignment1/even/even.component';
+import { BasicHighlightDirective } from './shared/directives/basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './shared/directives/better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { EvenComponent } from './assignment1/even/even.component';
     Assignment1Component,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
