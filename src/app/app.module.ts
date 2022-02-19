@@ -15,8 +15,11 @@ import { Assignment1Component } from './assignment1/assignment1.component';
 import { GameControlComponent } from './assignment1/game-control/game-control.component';
 import { OddComponent } from './assignment1/odd/odd.component';
 import { EvenComponent } from './assignment1/even/even.component';
+
 import { BasicHighlightDirective } from './shared/directives/basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './shared/directives/better-highlight/better-highlight.directive';
+import { DropdownDirective } from './shared/directives/dropdown/dropdown.directive';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +37,7 @@ import { BetterHighlightDirective } from './shared/directives/better-highlight/b
     EvenComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
+    DropdownDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
