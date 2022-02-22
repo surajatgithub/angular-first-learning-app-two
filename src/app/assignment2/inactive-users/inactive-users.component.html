@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md 12">
+        <h3>Inactive Users</h3>
+        <div class="list-group">
+            <div *ngIf="users.length; else noUserFoundTemplate">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true"
+                    *ngFor="let user of users; let i = index;">
+                    <div class="d-flex w-100">
+                        <h5 class="mb-1">{{ user }} | <a href="javascript:void(0)" (click)="setToActive(i)">Set to
+                                Active</a></h5>
+                    </div>
+                </a>
+            </div>
+            <ng-template #noUserFoundTemplate>
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100">
+                        <p>No Inactive Users Found</p>
+                    </div>
+                </a>
+            </ng-template>
+        </div>
+    </div>
+</div>
