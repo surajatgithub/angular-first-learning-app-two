@@ -28,6 +28,8 @@ import { ActiveUsersComponents } from './assignment2/active-users/active-users.c
 import { InActiveUsersComponents } from './assignment2/inactive-users/inactive-users.component';
 import { UserService } from './shared/services/user.service';
 import { CounterService } from './shared/services/counter.service';
+import { RecipeService } from './shared/services/recipe.service';
+import { ShoppingListService } from './shared/services/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,7 @@ import { CounterService } from './shared/services/counter.service';
     InActiveUsersComponents,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [UserService, CounterService],
+  providers: [UserService, CounterService, RecipeService, ShoppingListService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
